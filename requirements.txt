@@ -1,0 +1,6 @@
+
+streamlit
+torch
+sentence-transformers
+numpy<2
+transformers<4.45

@@ -1,10 +1,8 @@
-web_app.py
 import os
 import glob
 import streamlit as st
 import torch
 from sentence_transformers import SentenceTransformer, util
-
 st.set_page_config(page_title="Knowledge Box", page_icon="🧠")
 st.title("🧠 Knowledge Box Search")
 

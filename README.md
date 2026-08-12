@@ -1,13 +1,33 @@
 # 🧠 Knowledge Box - PyTorch Semantic Search Engine
 
-An AI-powered local search engine that uses PyTorch tensor operations and sentence embeddings to semantically search through personal markdown notes.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://knowledge-box-hmxnsgxm4g6db4e5cnt45u.streamlit.app/)
 
-## Features
-- **Semantic Understanding:** Searches context and meaning, not just exact keyword matches.
-- **Local First:** Processes markdown files directly from the `data/` folder.
-- **PyTorch Engine:** Built using `torch` and `sentence-transformers`.
+An AI-powered local knowledge retrieval engine built with **PyTorch** and **Sentence Transformers**. It reads local Markdown notes, converts text chunks into vector embeddings, and performs semantic similarity search to find relevant information based on meaning rather than exact keyword matching.
 
-## Usage
-1. Place markdown (`.md`) files in the `data/` folder.
-2. Run `python app.py` in your terminal.
-3. Type natural language queries to search your notes!
+---
+
+## 🚀 Live Demo
+Try the interactive web app here:  
+👉 **[Launch Knowledge Box Web App](https://knowledge-box-hmxnsgxm4g6db4e5cnt45u.streamlit.app/)**
+
+---
+
+## ✨ Key Features
+* 🔍 **Semantic Search:** Uses vector embeddings (`all-MiniLM-L6-v2`) to capture context and intent behind queries.
+* ⚡ **PyTorch Engine:** Leverages PyTorch tensor math and cosine similarity for high-speed matching.
+* 📁 **Local Knowledge Vault:** Reads `.md` files directly from the `data/` folder.
+* 🌐 **Interactive Web Interface:** Built and deployed with **Streamlit Community Cloud**.
+
+---
+
+## 🛠️ Project Structure
+
+```text
+knowledge-box/
+│
+├── data/                  # Folder containing markdown notes (.md)
+│   └── sample_note.md
+├── app.py                 # Terminal-based search application
+├── web_app.py             # Streamlit web dashboard interface
+├── requirements.txt       # Dependencies for local setup & deployment
+└── README.md              # Project documentation
